@@ -12,6 +12,10 @@ global.$ = {
     gulp: require('gulp'),
     del: require('del'),
     merge: require('merge-stream'),
+    browserify : require('browserify'),
+    source : require('vinyl-source-stream'),
+    buffer : require('vinyl-buffer'),
+    babel : require('babelify'),
     browserSync: require('browser-sync').create(),
     gp: require('gulp-load-plugins')()
 };
