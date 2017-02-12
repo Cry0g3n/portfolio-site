@@ -21,6 +21,9 @@ module.exports = function () {
                 mode: {
                     symbol: {
                         sprite: "../sprite.svg"
+                    },
+                    example: {
+                        dest: '../tmp/svgDemo.html'
                     }
                 }
             }))
