@@ -20,10 +20,10 @@ module.exports = function () {
             .pipe($.gp.svgSprite({
                 mode: {
                     symbol: {
-                        sprite: "../sprite.svg"
-                    },
-                    example: {
-                        dest: '../tmp/svgDemo.html'
+                        sprite: "../sprite.svg",
+                        example: {
+                            dest: '../tmp/svgDemo.html'
+                        }
                     }
                 }
             }))
