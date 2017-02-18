@@ -1,3 +1,21 @@
-body {
-  margin: 0;
-}
+// colors
+
+$light_green: #00bfa5;
+$dark_green: #009688;
+$light_grey: #455a64;
+$dark_grey: #373e42;
+$red: #e44845;
+$grey: #53595d;
+$white: #fff;
+
+// setups
+@import "misc/fonts";
+@import "misc/mixins";
+@import "misc/layout";
+@import "misc/common";
+
+// partials
+@import "partials/header_about";
+
+// pages
+@import "pages/welcome";
