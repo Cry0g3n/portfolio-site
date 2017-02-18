@@ -10,6 +10,7 @@
     "babelify": "^7.3.0",
     "browser-sync": "~2.18.7",
     "browserify": "^14.0.0",
+    "components-font-awesome": "^4.7.0",
     "del": "~2.2.2",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
