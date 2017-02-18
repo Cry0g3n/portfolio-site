@@ -21,3 +21,14 @@
     font-weight: 700;
   }
 }
+
+@font-face {
+  font-family: 'BERNIERRegular-Regular';
+  src: url('../fonts/BERNIERRegular-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BERNIERRegular-Regular.otf') format('opentype'),
+  url('../fonts/BERNIERRegular-Regular.woff') format('woff'),
+  url('../fonts/BERNIERRegular-Regular.ttf') format('truetype'),
+  url('../fonts/BERNIERRegular-Regular.svg#BERNIERRegular-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
