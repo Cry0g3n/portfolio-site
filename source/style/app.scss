@@ -9,20 +9,13 @@ $grey: #53595d;
 $white: #fff;
 
 // setups
-@import "misc/fonts";
-@import "misc/mixins";
-@import "misc/layout";
-@import "misc/common";
+@import "misc/**/*scss";
 
 // partials
-@import "partials/header_about";
-@import "partials/main_about";
-@import "partials/footer";
+@import "partials/**/*scss";
 
 // pages
-@import "pages/welcome";
+@import "pages/**/*scss";
 
 // components
-@import "components/skills";
-@import "components/contacts";
-@import "components/header_socials";
+@import "components/**/*scss";
