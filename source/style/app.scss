@@ -16,6 +16,13 @@ $white: #fff;
 
 // partials
 @import "partials/header_about";
+@import "partials/main_about";
+@import "partials/footer";
 
 // pages
 @import "pages/welcome";
+
+// components
+@import "components/skills";
+@import "components/contacts";
+@import "components/header_socials";
