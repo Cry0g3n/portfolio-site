@@ -3,7 +3,7 @@
   overflow: hidden;
   width: 100%;
   min-height: 1130px;
-  background: url(/assets/img/bg/portfolio_mountains-sea_1800.png) no-repeat center;
+  background: url('../../assets/img/bg/portfolio_mountains-sea_1800.png') no-repeat center;
   background-size: cover;
 }
 
@@ -109,7 +109,7 @@
   &__blur {
     position: absolute;
     bottom: -46px;
-    background: url(/assets/img/bg/portfolio_mountains-sea_1800.png) no-repeat center;
+    background: url('../../assets/img/bg/portfolio_mountains-sea_1800.png') no-repeat center;
     background-size: 1903px;
     background-position: center;
     height: 910px;
