@@ -5,6 +5,9 @@ module.exports = function () {
             disableDefaultUI: false,
             mapTypeControl: false,
             scrollwheel: false,
+            scaleControl: false,
+            streetViewControl: false,
+            zoomControl: false,
 
             center: new google.maps.LatLng(57.624523, 39.885989),
 
