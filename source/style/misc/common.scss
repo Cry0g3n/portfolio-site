@@ -1,0 +1,216 @@
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+html, body {
+  height: 100%;
+  font: 16px/1.5 'Arial';
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #6da3bd;
+  transition: all 1s linear;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button, input, label:after, label:before {
+  transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+p {
+  color: $dark_grey;
+  @include roboto(regular);
+  line-height: 36px;
+  @include tablet {
+    color: blue;
+  }
+  @include phone {
+    color: red;
+  }
+}
+
+h1, h2 {
+  font-size: 63px;
+  font-weight: 400;
+  position: relative;
+  line-height: 4rem;
+  & .light {
+    color: white;
+  }
+  @include phone {
+    font-size: 35px;
+    line-height: 2rem;
+  }
+}
+
+h3 {
+
+}
+
+h4 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41px;
+  @include phone {
+    font-size: 21px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark_grey;
+  @include bernier;
+  display: inline-block;
+  margin: 0;
+  &:after, &:before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 5px;
+    background-color: rgba(#373e42, .2);
+    position: absolute;
+    top: 30px;
+  }
+  &:before {
+    left: -30px;
+  }
+  &:after {
+    right: -30px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include phone {
+    &:after, &:before {
+      display: none;
+    }
+    line-height: 1.5em;
+  }
+}
+
+h1, h2 {
+  @include phone {
+    font-size: 3em;
+  }
+}
+
+.button__link {
+  padding: 0 30px;
+  color: white;
+  @include roboto(medium);
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  right: (100/1800)*100%;
+  top: 24px;
+  font-size: 16px;
+  line-height: 36px;
+  box-sizing: border-box;
+  text-decoration: none;
+  &:hover {
+    background: white;
+    color: $dark_green;
+  }
+  @include phone {
+    left: 50%;
+    right: inherit;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+  }
+}
+
+.mytip-red {
+  background-color: $red;
+  border-color: $red;
+  border-radius: 6px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  @include roboto(regular);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 20px;
+}
+
+/*pages*/
+
+.user .social {
+  margin-bottom: 40px;
+}
+
+.arrow {
+  width: 26px;
+  height: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow__down {
+  position: absolute;
+  bottom: 100px;
+  height: 70px;
+
+}
+
+.arrow__up {
+  transform: rotate(180deg);
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.arrow__svg {
+  fill: white;
+  opacity: .7;
+  transition: .5s linear;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.triangle {
+  width: 100%;
+  @extend .clearfix;
+  position: relative;
+  top: -50px;
+}
+
+.triangle__left {
+  float: left;
+  height: 50px;
+  width: 50%;
+}
+
+.triangle__right {
+  float: left;
+  height: 50px;
+  width: 50%;
+}
+
+.triangle polygon {
+  fill: white;
+}
+
+.triangle__about .triangle__left polygon {
+  fill: #EFEEE9;
+}
+
+.triangle__about .triangle__right polygon {
+  fill: #EEEBDF;
+  @include phone {
+    fill: #EFEEE9;
+  }
+  @include tablet {
+    fill: #EFEEE9;
+  }
+}

@@ -1,0 +1,16 @@
+extends ../layouts/layout
+
+block variables
+    - var title = 'Сайт Шемякова Андрея'
+
+block content
+    //.parallax //TODO
+
+    a(href="/").button.button__link="Авторизоваться"
+    .flip-container
+        .flipper
+            .front
+                include ../components/user
+            .back
+                include ../components/auth
+

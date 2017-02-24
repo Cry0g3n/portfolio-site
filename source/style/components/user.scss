@@ -1,0 +1,97 @@
+.pages {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pages__item {
+  border-right: 2px solid rgba(#dee3e7, .5);
+  text-align: center;
+  background-color: #00bfa5;
+  width: 100%;
+  transition: all .5s linear;
+  &:last-child {
+    border: none;
+  }
+  &:hover {
+    background-color: $dark_green;
+  }
+}
+
+.pages__link {
+  color: white;
+  @include roboto(regular);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  text-decoration: none;
+  display: block;
+  min-height: 41px;
+  @include phone {
+    font-size: 14px;
+  }
+}
+
+.user, .auth {
+  width: 380px;
+  min-height: 395px;
+  max-height: 600px;
+  overflow: hidden;
+
+  background-color: rgba(#fcfcfc, 0.85);
+  border-radius: 4px 5px 5px 4px;
+  text-align: center;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  position: relative;
+  @include phone {
+    margin: 0 auto;
+    width: (300/320)*100%;
+    max-width: 320px;
+  }
+
+}
+
+.user__photo {
+  max-width: 141px;
+  max-height: 141px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.user__image {
+  transform: translate(-34%, -25%) scale(0.5);
+}
+
+.user__name {
+  color: $dark_grey;
+  @include roboto(medium);
+  font-size: 1.75rem;
+  line-height: 34px;
+  margin: 0;
+  padding: 0;
+  max-height: 70px;
+  overflow: hidden;
+  @include phone {
+    font-size: 21px;
+  }
+}
+
+.user__description {
+  color: $dark_grey;
+  @include roboto(regular);
+  line-height: 24px;
+  max-height: 50px;
+  overflow: hidden;
+  @include phone {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,8 @@
+ul.social
+    -var socials={"https://vk.com/shemyakov.andrey":"vk","https://github.com/Cry0g3n/":"github","#":"in"}
+    each val,key in socials
+        li.social__item
+            a(href="" + key target="_blank").social__link
+                svg.social__svg
+                    use(xlink:href='./assets/img/sprite.svg#' + val)
+
