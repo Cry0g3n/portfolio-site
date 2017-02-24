@@ -1,0 +1,11 @@
+header.header
+    .header__parallax
+        img(src="./assets/img/bg/welcome_mountains_1800.png" alt="Сайт Портфолио Николая Азаркина").header__parallax__image
+
+    include ../components/social
+    include ../components/hamburger
+    svg.header__svg
+        use(xlink:href='assets/img/sprite.svg#portfolio_header')
+    include ../components/user
+    svg.arrow.arrow__down
+        use(xlink:href='assets/img/sprite.svg#portf_arrow_down').arrow__svg

@@ -1,0 +1,162 @@
+.footer {
+  min-width: 1200px;
+  width: 100%;
+  background-color: rgba(#373e42, .85);
+  padding-top: 17px;
+  @include phone {
+    min-width: 320px;
+  }
+  @include tablet {
+    min-width: 768px;
+    text-align: center;
+  }
+}
+
+.footer .social {
+  float: right;
+  margin-right: (31/1800)*100%;
+  @include phone {
+    float: inherit;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  @include tablet {
+    float: inherit;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.footer .social__svg {
+  fill: white;
+}
+
+.footer .navigation {
+  margin-left: (31/1800)*100%;
+  position: static;
+  display: inline-block;
+  background: none;
+  max-width: 50%;
+  padding: 0;
+  min-width: inherit;
+  @include phone {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: inherit;
+  }
+  @include tablet {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: inherit;
+
+  }
+}
+
+.footer .navigation__link {
+  margin-right: 40px;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: #00bfa5;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  @include phone {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+  @include tablet {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+}
+
+.footer__top {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  @include phone {
+    text-align: center;
+  }
+  @include tablet {
+    text-align: center;
+  }
+  @extend .clearfix;
+}
+
+.footer__bottom {
+  width: 100%;
+  padding: 16px (33/1800)*100% 16px (33/1800)*100%;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(white, .1);
+  @extend .clearfix;
+  @include phone {
+    text-align: center;
+    font-size: 13px;
+  }
+  @include tablet {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+.copyright {
+  opacity: 0.5;
+  color: white;
+  @include roboto(regular);
+  font-size: 1rem;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  @include phone {
+    text-align: center;
+    font-size: 13px;
+  }
+  @include tablet {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+.copyright__me {
+  float: left;
+  max-width: 498px;
+  @include phone {
+    width: 90%;
+    margin: 0 auto;
+    max-width: inherit;
+    float: inherit;
+  }
+  @include tablet {
+    width: 90%;
+    margin: 0 auto;
+    max-width: inherit;
+    float: inherit;
+  }
+}
+
+.copyright__text {
+  float: right;
+  max-width: 466px;
+  @include phone {
+    width: 90%;
+    margin: 0 auto;
+    max-width: inherit;
+    text-align: center;
+    float: inherit;
+  }
+  @include tablet {
+    width: 90%;
+    margin: 0 auto;
+    max-width: inherit;
+    text-align: center;
+    float: inherit;
+  }
+}

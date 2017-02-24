@@ -58,8 +58,8 @@
 }
 
 .user__photo {
-  max-width: 141px;
-  max-height: 141px;
+  max-width: 200px;
+  max-height: 200px;
   overflow: hidden;
   border-radius: 50%;
   display: block;
@@ -68,7 +68,7 @@
 }
 
 .user__image {
-  transform: translate(-34%, -25%) scale(0.5);
+  @include cover;
 }
 
 .user__name {

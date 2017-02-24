@@ -8,5 +8,8 @@
         "func-names": ["error", "never"],
         "indent": [2, 4],
         "linebreak-style": ["error", "windows"]
+    },
+    "globals": {
+        "google": false,
     }
 }

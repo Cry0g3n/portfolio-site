@@ -1,0 +1,104 @@
+.header {
+  height: 100vh;
+  min-width: 1200px;
+  width: 100%;
+  position: relative;
+  @include phone {
+    min-width: 320px;
+  }
+  @include tablet {
+    min-width: 768px;
+  }
+  @include desktop {
+    min-width: 1200px;
+  }
+}
+
+.header__parallax {
+  overflow: hidden;
+  height: 100%;
+}
+
+.header__parallax__image {
+  width: 100%;
+  @include phone {
+    height: 115%;
+  }
+  @include tablet {
+    height: 115%;
+  }
+  @include desktop {
+    height: 115%;
+  }
+}
+
+.header .user {
+  background: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: inherit;
+  @include phone {
+    min-width: 320px;
+  }
+  @include tablet {
+    min-width: 768px;
+  }
+  @include desktop {
+    min-width: 1200px;
+  }
+}
+
+.header .user .user__name {
+  color: white;
+  font-size: 2.18rem;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.header .user .user__description {
+  color: white;
+  font-size: 1rem;
+  max-height: 100px;
+  overflow: hidden;
+  @include phone {
+    font-size: 14px;
+  }
+}
+
+.header .user .social, .header .user .pages {
+  display: none;
+}
+
+.header__svg {
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .06;
+  width: 1176px;
+  height: 313px;
+  @include phone {
+    width: 90%;
+  }
+  @include tablet {
+    width: 90%;
+  }
+  @include desktop {
+    width: 90%;
+  }
+}
+
+.header .social {
+  position: absolute;
+  left: (30/1800)*100%;
+  top: 34px;
+}
+
+.header .social__svg {
+  fill: white;
+}

@@ -1,0 +1,29 @@
+.hamburger {
+  position: absolute;
+  right: (30/1800)*100%;
+  top: 28px;
+  width: 40px;
+  z-index: 9999;
+  @include phone {
+    width: 25px;
+  }
+
+  &__line {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    @include phone {
+      width: 25px;
+      margin-bottom: 5px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
