@@ -1,0 +1,126 @@
+.navigation__full {
+  background-color: rgba(0, 191, 165, 0.87);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  //z-index: 2;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  display: flex;
+}
+
+.navigation__full__active {
+  background-color: rgba(0, 191, 165, 0.87);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //z-index: 2;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  z-index: 999;
+}
+
+@keyframes tester {
+  0% {
+    background-color: rgba(white, 0.5);
+  }
+}
+
+@keyframes testeroff {
+  100% {
+    display: none;
+  }
+}
+
+.navigation__inner {
+  margin: auto
+}
+
+.navigation__full__active, .navigation__full {
+  & a {
+    color: white;
+    @include bernier;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 89px;
+    text-decoration: none;
+    @include phone {
+      font-size: 35px;
+    }
+    &:last-child {
+      margin-bottom: 0
+    }
+    &:after, &:before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 5px;
+      background-color: rgba(white, .8);
+      position: relative;
+      top: -18px;
+      opacity: 0;
+    }
+    &:before {
+      left: -24px
+    }
+    &:after {
+      right: -20px;
+    }
+    &:hover {
+      &:after, &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@keyframes bounces {
+  100% {
+    display: flex;
+  }
+}
+
+.navigation__full.active {
+  animation: bounces 2s infinite ease-in-out;;
+}
+
+.hamburger__line {
+  transition: all 233ms cubic-bezier(0.5, 0, 0, 1);
+}
+
+.hamburger__active {
+  & .hamburger__line {
+    opacity: 0;
+  }
+  & .hamburger__line:first-child {
+    opacity: 1;
+    transform: rotate(-135deg) translateY(-18.5px);
+    @include phone {
+      transform: rotate(-135deg) translateY(-11.5px);
+    }
+  }
+  & .hamburger__line:last-child {
+    opacity: 1;
+    transform: rotate(135deg) translateY(16.5px);
+    @include phone {
+      transform: rotate(135deg) translateY(11.5px);
+    }
+  }
+}
