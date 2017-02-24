@@ -1,0 +1,123 @@
+.feedback {
+  width: 380px;
+  padding-top: 30px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+
+  @extend .clearfix;
+  margin-bottom: 70px;
+  @include phone {
+    width: (300/320)*100%;
+    max-width: 330px;
+  }
+  @include tablet {
+    //min-width: 768px;
+
+  }
+  @include desktop {
+    //min-width: 1200px;
+  }
+  h4 {
+    &:after, &:before {
+      top: 18px;
+    }
+  }
+}
+
+.feedback__blur {
+  filter: blur(50px);
+  z-index: 1;
+  background: url('../img/sea.png') center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  @include phone {
+    filter: blur(10px);
+  }
+}
+
+.feedback__title {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.form__row {
+  width: 340px;
+  margin: 0 auto;
+  @include phone {
+    width: (261/320)*100%;
+
+  }
+  @include tablet {
+    //min-width: 768px;
+
+  }
+  @include desktop {
+    //min-width: 1200px;
+  }
+}
+
+.feedback__form {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+
+}
+
+.feedback__input, .feedback__textearea {
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  padding-left: 20px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.feedback__input {
+  height: 45px;
+}
+
+.feedback__textearea {
+  height: 140px;
+  resize: none;
+}
+
+.feedback__button {
+  width: 190px;
+  min-height: 45px;
+  background-color: rgba(#00bfa5, .85);
+  text-align: center;
+  outline: none;
+  border: none;
+  float: left;
+  color: white;
+  @include roboto(medium);
+  font-size: 1rem;
+  line-height: 2.25rem;
+  &:hover {
+    background-color: rgba(#00bfa5, .3);
+    cursor: pointer;
+  }
+  @include phone {
+    width: 50%;
+  }
+  @include tablet {
+    //min-width: 768px;
+
+  }
+  @include desktop {
+    //min-width: 1200px;
+  }
+}
+
+.feedback__submit {
+  border-right: 1px solid rgba(white, .85);
+}

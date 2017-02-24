@@ -1,0 +1,13 @@
+.feedback.wow.fadeIn
+    .feedback__blur
+
+    h4.feedback__title="Связаться со мной"
+    form(method="POST" action="/feedback").feedback__form
+        .form__row
+            input(type="text" name="name" placeholder="Имя" data-error="Введите Ваше имя").feedback__input
+        .form__row
+            input(type="text" name="email" placeholder="Email" data-error="Введите E-mail").feedback__input
+        .form__row
+            textarea(name="message" data-error="Введите сообщение").feedback__textearea
+        input(type="submit" name="send" value="Отправить").feedback__button.feedback__submit
+        input(type="reset" value="Очистить").feedback__button.feedback__reset

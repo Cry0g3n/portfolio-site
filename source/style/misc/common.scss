@@ -69,7 +69,7 @@ h4 {
 
 h1, h2, h3, h4, h5, h6 {
   color: $dark_grey;
-  @include bernier;
+  @include bernier();
   display: inline-block;
   margin: 0;
   &:after, &:before {

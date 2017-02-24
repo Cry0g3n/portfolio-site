@@ -1,0 +1,184 @@
+.reviews {
+  padding-top: 24px;
+  background-color: white;
+  background-image: url("../img/bg/portfolio_mountains-sea_1800.png");
+  min-width: 1200px;
+  @extend .clearfix;
+  @include phone {
+    min-width: 320px;
+
+  }
+  @include tablet {
+    min-width: 768px;
+
+  }
+  @include desktop {
+    min-width: 1200px;
+  }
+}
+
+.reviews__header {
+  width: 507px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-bottom: 48px;
+  @include phone {
+    width: (253/320)*100%;
+
+  }
+  @include tablet {
+    //min-width: 768px;
+
+  }
+  @include desktop {
+    //min-width: 1200px;
+  }
+}
+
+.reviews__header__title {
+  width: 296px;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  @include phone {
+    width: (253/320)*100%;
+
+  }
+  @include tablet {
+    //min-width: 768px;
+
+  }
+  @include desktop {
+    //min-width: 1200px;
+  }
+}
+
+.reviews__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 810px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  @include phone {
+    width: (312/320)*100%;
+
+  }
+  @include tablet {
+    width: (706/768)*100%;
+  }
+  @include desktop {
+    width: (900/1200)*100%;
+    text-align: center;
+  }
+}
+
+.reviews__item {
+  display: inline-block;
+  width: 380px;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  text-align: left;
+  @include phone {
+    width: (310/320)*100%;
+    margin: 0 auto;
+    margin-bottom: 37px;
+
+  }
+  @include tablet {
+    width: (348/768)*100%;
+    margin-right: (24/768)*100%;
+  }
+  @include desktop {
+    //min-width: 1200px;
+  }
+}
+
+.reviews__blockquote {
+  color: $dark_grey;
+  @include roboto(medium);
+  font-size: 1rem;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 27px;
+  @include phone {
+    font-size: 14px;
+  }
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 14px
+  }
+}
+
+.reviews__photo {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 23px;
+  float: left;
+  @include phone {
+    width: 50px;
+    height: 50px;
+
+  }
+  @include tablet {
+    //min-width: 768px;
+
+  }
+  @include desktop {
+    //min-width: 1200px;
+  }
+}
+
+.reviews__image {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__who {
+  display: inline-block;
+  width: 280px;
+  float: right;
+  margin-top: 15px;
+  @include phone {
+    width: (230/320)*100%;
+    margin-top: 0;
+  }
+  @include tablet {
+    width: 49%;
+    float: left;
+
+  }
+  @include desktop {
+    //min-width: 1200px;
+  }
+}
+
+.reviews__name, .reviews__working {
+  margin: 0;
+  padding: 0;
+  color: #20b5a1;
+  @include roboto(bold);
+  font-size: 16px;
+  line-height: 24px;
+  @include phone {
+    font-size: 14px;
+  }
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.reviews__working {
+  font-weight: 400;
+}

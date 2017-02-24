@@ -1,0 +1,26 @@
+.reviews
+    .reviews__header
+        svg.works__header__svg
+            use(xlink:href='assets/img/sprite.svg#about_header').works__header__use
+        h2.reviews__header__title="Что обо мне говорят"
+    ul.reviews__list
+        li.reviews__item
+            blockquote.reviews__blockquote="Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+            .reviews__photo
+                img(src="./assets/img/content/dima.png" alt="Ковальчук Дмитрий основатель Школы Онлайн Образования loftschool, loftblog").reviews__image
+            .reviews__who
+                p.reviews__name="Ковальчук Дмитрий"
+                p.reviews__working="основатель Loftschool"
+        li.reviews__item
+            blockquote.reviews__blockquote="Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+            .reviews__photo
+                img(src="./assets/img/content/vova.png" alt="Владимир Сабанцев преподаватель курса Комплексное обучение веб разработке").reviews__image
+            .reviews__who
+                p.reviews__name="Владимир Сабанцев"
+                p.reviews__working="преподаватель"
+
+    include feedback
+
+    svg.arrow.arrow__up
+        use(xlink:href='assets/img/sprite.svg#portf_arrow_down').arrow__svg
+    include ../partials/footer
