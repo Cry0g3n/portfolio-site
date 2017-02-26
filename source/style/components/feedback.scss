@@ -13,11 +13,10 @@
     max-width: 330px;
   }
   @include tablet {
-    //min-width: 768px;
 
   }
   @include desktop {
-    //min-width: 1200px;
+
   }
   h4 {
     &:after, &:before {
@@ -51,14 +50,12 @@
   margin: 0 auto;
   @include phone {
     width: (261/320)*100%;
-
   }
   @include tablet {
-    //min-width: 768px;
 
   }
   @include desktop {
-    //min-width: 1200px;
+
   }
 }
 
@@ -66,7 +63,6 @@
   z-index: 2;
   position: relative;
   width: 100%;
-
 }
 
 .feedback__input, .feedback__textearea {
@@ -109,11 +105,10 @@
     width: 50%;
   }
   @include tablet {
-    //min-width: 768px;
 
   }
   @include desktop {
-    //min-width: 1200px;
+
   }
 }
 

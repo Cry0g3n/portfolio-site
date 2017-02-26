@@ -1,6 +1,9 @@
 .auth {
   text-align: center;
   position: relative;
+  max-height: 600px;
+  overflow: hidden;
+  padding: 40px 0 0;
   h4 {
     margin-bottom: 40px;
     position: relative;
@@ -8,9 +11,6 @@
       top: 15px;
     }
   }
-  max-height: 600px;
-  overflow: hidden;
-  padding: 40px 0 0;
   p {
     padding: 0;
     opacity: 0.8;
@@ -68,7 +68,6 @@
 
 .checkbox {
   opacity: 0;
-
 }
 
 .label {

@@ -1,4 +1,4 @@
-.worksSlider {
+.works_slider {
   @extend .clearfix;
   position: relative;
   @include phone {
@@ -12,7 +12,7 @@
   }
 }
 
-.worksSlider__information {
+.works_slider__information {
   float: left;
   width: 50%;
   background-color: #f0efe9;
@@ -26,7 +26,7 @@
   }
 }
 
-.worksSlider__previews {
+.works_slider__previews {
   float: right;
   width: 50%;
   background-color: #efebe0;
@@ -44,7 +44,7 @@
 }
 
 
-.worksInfo {
+.works_info {
   margin: 0;
   padding: 0;
   width: 46.6666667%;
@@ -56,25 +56,25 @@
   transform: translate(-50%, -50%);
 }
 
-.worksInfo__mobile {
+.works_info__mobile {
   display: none;
   @include phone {
     display: block;
   }
 }
 
-.worksInfo__item {
+.works_info__item {
   display: none;
   & span {
     //opacity: 0;
   }
 }
 
-.worksInfo__item__active {
+.works_info__item__active {
   display: block;
 }
 
-.worksInfo h4 {
+.works_info h4 {
   margin-bottom: 39px;
 }
 
@@ -94,7 +94,7 @@
   line-height: 3rem;
 }
 
-.worksInfo__link {
+.works_info__link {
   background-color: $light_green;
   border-radius: 5px;
   text-decoration: none;
@@ -107,7 +107,7 @@
   }
 }
 
-.Works__previews {
+.works__previews {
   list-style-type: none;
   padding: 0;
   width: 643px;
@@ -121,7 +121,6 @@
     width: 100%;
     height: 183px;
   }
-
 }
 
 .previews__item {
@@ -191,7 +190,7 @@
   position: absolute;
 }
 
-.Works__previews__mini {
+.works__previews__mini {
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -252,13 +251,13 @@
   }
 }
 
-.worksSlider__information__mobile {
+.works_slider__information__mobile {
   display: block;
   float: none;
   width: 100%;
   position: static;
   padding-bottom: 10px;
-  & .worksInfo {
+  & .works_info {
     top: 0;
     transform: translateX(-50%)
   }
@@ -268,7 +267,7 @@
   & .tech {
     margin-bottom: 15px;
   }
-  & .worksInfo__link {
+  & .works_info__link {
     font-size: 12px;
     margin-bottom: 15px;
   }
