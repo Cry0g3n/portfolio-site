@@ -17,7 +17,7 @@ body {
 
 a {
   color: #6da3bd;
-  transition: all 1s linear;
+  transition: all 0.3s linear;
 
   &:hover {
     text-decoration: none;
@@ -52,10 +52,6 @@ h1, h2 {
     font-size: 35px;
     line-height: 2rem;
   }
-}
-
-h3 {
-
 }
 
 h4 {
@@ -141,8 +137,6 @@ h1, h2 {
   line-height: 16px;
   margin-top: 20px;
 }
-
-/*pages*/
 
 .user .social {
   margin-bottom: 40px;

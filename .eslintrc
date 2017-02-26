@@ -11,5 +11,6 @@
     },
     "globals": {
         "google": false,
+        "$": false
     }
 }
