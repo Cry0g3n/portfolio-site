@@ -40,24 +40,21 @@
   top: 0;
   @include phone {
     float: inherit;
-    margin: 0 auto;
     display: block;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
   @include tablet {
     float: inherit;
-    margin: 0 auto;
     display: block;
     width: 50%;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     height: 150px;
   }
   @include desktop {
     float: inherit;
-    margin: 0 auto;
     display: block;
     width: 50%;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     height: 150px;
   }
 }
@@ -127,13 +124,12 @@
   @include tablet {
     max-width: inherit;
     width: (473/768)*100%;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
   }
 }
 
 .about__paragraph {
-  color: #455a64;
+  color: $light_grey;
   @include roboto(regular);
   font-size: 1rem;
   line-height: 24px;
@@ -148,8 +144,7 @@
 
   }
   @include tablet {
-    margin: 0 auto;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
     font-size: 14px;
     width: (472/768)*100%;
     max-width: inherit;
@@ -161,7 +156,6 @@
   width: 50%;
   margin-top: -50px;
   float: right;
-  text-align: center;
   background-color: #eeebdf;
   padding: 0 29px;
   box-sizing: border-box;
@@ -175,8 +169,7 @@
   @include tablet {
     min-width: 768px;
     text-align: center;
-    padding: 0;
-    padding-top: 10px;
+    padding: 10px 0 0;
     width: 100%;
     margin-top: 0;
   }
@@ -208,11 +201,10 @@
 }
 
 .useful__paragraph {
-  color: #455a64;
+  color: $light_grey;
   @include roboto(regular);
   font-size: 1rem;
   line-height: 24px;
-  margin-bottom: 15px;
   text-align: left;
   margin-bottom: 56px;
   @include phone {
@@ -221,8 +213,7 @@
 
   }
   @include tablet {
-    margin: 0 auto;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
     font-size: 14px;
     width: (472/768)*100%;
     max-width: inherit;

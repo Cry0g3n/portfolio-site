@@ -50,10 +50,9 @@
   h4 {
     display: block;
     width: 50%;
-    margin: 0 auto;
     text-align: center;
     position: relative;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     &:after, &:before {
       top: 18px;
     }
@@ -64,7 +63,7 @@
   display: block;
   text-decoration: none;
   opacity: 0.8;
-  color: #455a64;
+  color: $light_grey;
   @include roboto(regular);
   font-size: 1rem;
   font-weight: 500;

@@ -1,7 +1,6 @@
 .reviews {
   padding-top: 24px;
-  background-color: white;
-  background-image: url("../img/bg/portfolio_mountains-sea_1800.png");
+  background: white url("../img/bg/portfolio_mountains-sea_1800.png");
   min-width: 1200px;
   @extend .clearfix;
   @include phone {
@@ -28,11 +27,10 @@
 
   }
   @include tablet {
-    //min-width: 768px;
 
   }
   @include desktop {
-    //min-width: 1200px;
+
   }
 }
 
@@ -57,11 +55,9 @@
 
 .reviews__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   width: 810px;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
   @include phone {
     width: (312/320)*100%;
 
@@ -78,8 +74,7 @@
 .reviews__item {
   display: inline-block;
   width: 380px;
-  margin: 0;
-  margin-right: 20px;
+  margin: 0 20px 0 0;
   padding: 0;
   text-align: left;
   @include phone {
@@ -102,8 +97,7 @@
   @include roboto(medium);
   font-size: 1rem;
   line-height: 26px;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 0 0 27px;
   @include phone {
     font-size: 14px;
   }
@@ -129,11 +123,10 @@
 
   }
   @include tablet {
-    //min-width: 768px;
 
   }
   @include desktop {
-    //min-width: 1200px;
+
   }
 }
 

@@ -21,7 +21,7 @@
 }
 
 .skill__inner {
-  stroke: #00bfa5;
+  stroke: $light_green;
 }
 
 .skill__name {
@@ -33,7 +33,7 @@
   transform: translate(-50%, -50%);
   max-height: 50px;
   overflow: hidden;
-  color: #00bfa5;
+  color: $light_green;
   @include roboto(regular);
   font-size: .75rem;
   font-weight: 500;

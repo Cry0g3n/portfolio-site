@@ -52,13 +52,12 @@
 .label__mouse {
   width: 20px;
   height: 20px;
-  margin: 0 auto;
   position: absolute;
-  margin-left: 4px;
+  margin: 0 auto 0 4px;
 }
 
 .label__svg {
-  fill: #00bfa5;
+  fill: $light_green;
 }
 
 .blog__menu {
@@ -130,17 +129,17 @@
 }
 
 .blog__list__link {
-  color: #455a64;
+  color: $light_grey;
   @include roboto(regular);
   font-size: 1rem;
   text-decoration: none;
 }
 
 .blog__list--active {
-  border-right: 2px solid #00bfa5;
+  border-right: 2px solid $light_green;
 
   & .blog__list__link {
-    color: #00bfa5;
+    color: $light_green;
     font-weight: 700;
   }
 }
@@ -163,7 +162,7 @@
 .articles__item {
   padding-bottom: 20px;
   margin-bottom: 63px;
-  border-bottom: 5px solid rgba(#373e42, .07);
+  border-bottom: 5px solid rgba($dark_grey, .07);
   &:last-child {
     padding: 0;
     border-bottom: 0;
@@ -194,7 +193,7 @@
 
 .articles__time {
   opacity: 0.7;
-  color: #00bfa5;
+  color: $light_green;
   @include roboto(regular);
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -210,11 +209,10 @@
 
 .articles__content {
   p {
-    color: #455a64;
+    color: $light_grey;
     @include roboto(regular);
     font-size: 1rem;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
     @include phone {
       font-size: 14px;
     }

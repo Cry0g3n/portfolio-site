@@ -1,7 +1,7 @@
 .footer {
   min-width: 1200px;
   width: 100%;
-  background-color: rgba(#373e42, .85);
+  background-color: rgba($dark_grey, .85);
   padding-top: 17px;
   @include phone {
     min-width: 320px;
@@ -43,16 +43,14 @@
   min-width: inherit;
   @include phone {
     width: 90%;
-    margin: 0 auto;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     max-width: inherit;
   }
   @include tablet {
     width: 90%;
-    margin: 0 auto;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     max-width: inherit;
 
   }
@@ -63,7 +61,7 @@
   color: white;
   text-decoration: none;
   &:hover {
-    color: #00bfa5;
+    color: $light_green;
   }
   &:last-child {
     margin-right: 0;

@@ -1,14 +1,13 @@
 .feedback {
   width: 380px;
   padding-top: 30px;
-  margin: 0 auto;
   position: relative;
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
 
   @extend .clearfix;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
   @include phone {
     width: (300/320)*100%;
     max-width: 330px;
@@ -93,7 +92,7 @@
 .feedback__button {
   width: 190px;
   min-height: 45px;
-  background-color: rgba(#00bfa5, .85);
+  background-color: rgba($light_green, .85);
   text-align: center;
   outline: none;
   border: none;
@@ -103,7 +102,7 @@
   font-size: 1rem;
   line-height: 2.25rem;
   &:hover {
-    background-color: rgba(#00bfa5, .3);
+    background-color: rgba($light_green, .3);
     cursor: pointer;
   }
   @include phone {

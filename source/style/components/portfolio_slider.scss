@@ -43,7 +43,7 @@
   }
 }
 
-/*worksInfo*/
+
 .worksInfo {
   margin: 0;
   padding: 0;
@@ -79,12 +79,11 @@
 }
 
 .tech {
-  border-top: 1px solid rgba(#009688, .3);
-  border-bottom: 1px solid rgba(#009688, .3);
+  border-top: 1px solid rgba($dark_green, .3);
+  border-bottom: 1px solid rgba($dark_green, .3);
   list-style: none;
-  margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
 }
 
 .tech__item {
@@ -96,7 +95,7 @@
 }
 
 .worksInfo__link {
-  background-color: #00bfa5;
+  background-color: $light_green;
   border-radius: 5px;
   text-decoration: none;
   color: white;
@@ -104,21 +103,19 @@
   font-size: 1rem;
   padding: 10px 15px 10px;
   &:hover {
-    background-color: #009688;
+    background-color: $dark_green;
   }
 }
 
 .Works__previews {
   list-style-type: none;
   padding: 0;
-  margin: 0;
   width: 643px;
   font-size: 0;
   height: 416px;
   overflow: hidden;
-  margin: 0 auto;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   position: relative;
   @include phone {
     width: 100%;
