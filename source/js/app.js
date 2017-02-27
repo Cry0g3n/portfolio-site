@@ -1,4 +1,5 @@
 const map = require('./map');
+const Parallax = require('./parallax');
 
 $(document).ready(() => {
     if ($('.contacts')) {
@@ -12,3 +13,5 @@ $(document).ready(() => {
         $('.flip-container').toggleClass('flip-container__active');
     });
 });
+
+Parallax.indexParallax();
