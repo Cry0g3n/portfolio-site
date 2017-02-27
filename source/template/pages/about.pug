@@ -25,59 +25,7 @@ block content
                     | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
         .about__useful
             p.useful__paragraph="Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку."
-            h4='Frontend'
-            div.skill.skill__active
-                span.skill__name="HTML5"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='90')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-            div.skill.skill__active
-                span.skill__name="CSS3"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='90')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-            div.skill.skill__active
-                span.skill__name="JavaScript & JQuery"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='90')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-            div.skill.skill__active
-                span.skill__name="SASS"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='90')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-
-
-            h4='Backend'
-            div.skill.skill__active
-                span.skill__name="Node.js"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='30')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-            div.skill.skill__active
-                span.skill__name="mongo.DB"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='70')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-
-            h4='Workflow'
-            div.skill.skill__active
-                span.skill__name="git"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='80')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-
-            div.skill.skill__active
-                span.skill__name="gulp"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='90')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-
-            div.skill.skill__active
-                span.skill__name="bower"
-                svg.skill__item(viewbox='0 0 120 120' data-wow-duration="0.5s" data-wow-delay="1s" data-percent='90')
-                    circle.skill__outer(fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
-                    circle.skill__inner(data-percentage='99', fill='none', stroke-width='20', stroke-dasharray='314.159265', stroke-dashoffset='314.159265', cx='60', cy='60', r='50', transform='rotate(-90, 60, 60)')
+            include ../components/skills
     .contacts
         #map
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrqqeHAXLaZIhtNSHaGpiRzxwT2a7vjtg"></script>
