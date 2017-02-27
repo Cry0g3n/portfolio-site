@@ -13,7 +13,7 @@ module.exports = function () {
             .pipe($.gp.sourcemaps.init({
                 loadMaps: true
             }))
-            // .pipe($.gp.uglify())
+            .pipe($.gp.uglify())
             .pipe($.gp.sourcemaps.write('./maps'))
             .pipe($.gulp.dest($.config.root + '/assets/js'))
     })
