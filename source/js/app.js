@@ -14,4 +14,5 @@ $(document).ready(() => {
     });
 });
 
-Parallax.indexParallax();
+Parallax.mouseParallax();
+Parallax.scrollParallax();

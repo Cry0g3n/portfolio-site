@@ -1,5 +1,5 @@
 const Parallax = {
-    indexParallax() {
+    mouseParallax() {
         const parallaxLayerList = $('.parallax').find('.parallax__layer');
         $(window).on('mousemove', (e) => {
             const mouseX = e.pageX;
@@ -15,6 +15,19 @@ const Parallax = {
                     transform: `translate3d(${widthPosition}px, ${heightPosition}px, 0px)`,
                     bottom: `-${bottomPosition}px`,
                 });
+            });
+        });
+    },
+
+    scrollParallax() {
+        $(window).scroll(() => {
+            const scrollPosition = $(window).scrollTop();
+            const elem = $('.header__parallax__image');
+            const shift = `${scrollPosition / -70}%`;
+            const transform = `translate3d(0, ${shift},0)`;
+
+            elem.css({
+                transform,
             });
         });
     },
