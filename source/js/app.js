@@ -21,5 +21,19 @@ $(document).ready(() => {
     });
 });
 
+$(document).ready(() => {
+    $('.arrow').on('click', function () {
+        if ($(this).hasClass('arrow__down')) {
+            $('html, body').animate({
+                scrollTop: $(window).height(),
+            }, 500);
+        } else if ($(this).hasClass('arrow__up')) {
+            $('html, body').animate({
+                scrollTop: 0,
+            }, 500);
+        }
+    });
+});
+
 Parallax.mouseParallax();
 Parallax.scrollParallax();
