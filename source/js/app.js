@@ -14,5 +14,12 @@ $(document).ready(() => {
     });
 });
 
+$(document).ready(() => {
+    $('.hamburger').on('click', () => {
+        $('.navigation__full, .navigation__full__active').toggleClass('navigation__full navigation__full__active');
+        $('.hamburger').toggleClass('hamburger__active');
+    });
+});
+
 Parallax.mouseParallax();
 Parallax.scrollParallax();
