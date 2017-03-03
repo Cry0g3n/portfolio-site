@@ -1,5 +1,6 @@
 const map = require('./map');
 const Parallax = require('./parallax');
+const Preloader = require('./preloader');
 
 $(document).ready(() => {
     if ($('.contacts')) {
@@ -37,3 +38,4 @@ $(document).ready(() => {
 
 Parallax.mouseParallax();
 Parallax.scrollParallax();
+Preloader();
