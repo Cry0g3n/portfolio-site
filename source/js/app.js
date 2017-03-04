@@ -1,6 +1,7 @@
 const map = require('./map');
 const Parallax = require('./parallax');
 const Preloader = require('./preloader');
+const BlogSlider = require('./blog');
 
 $(document).ready(() => {
     if ($('.contacts')) {
@@ -36,6 +37,21 @@ $(document).ready(() => {
     });
 });
 
+$(document).ready(() => {
+    const vw = $(window).width();
+    if (vw <= 1000) {
+        $.each($('.parallax__image'), function () {
+            $(this).remove();
+        });
+        $('.parallax').addClass('parallax__mobile');
+    }
+});
+
+$('.label__mouse').on('click', () => {
+    $('.blog__menu').toggleClass('blog__menu__mobile');
+});
+
 Parallax.mouseParallax();
 Parallax.scrollParallax();
 Preloader();
+BlogSlider();
