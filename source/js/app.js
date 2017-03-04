@@ -4,13 +4,14 @@ const Preloader = require('./preloader');
 const BlogSlider = require('./blog');
 
 $(document).ready(() => {
-    if ($('.contacts')) {
+    const contacts = $('.contacts');
+    if (contacts && contacts.length) {
         map();
     }
 });
 
 $(document).ready(() => {
-    $('.button__link').on('click', (e) => {
+    $('.button__link, .to__index').on('click', (e) => {
         e.preventDefault();
         $('.flip-container').toggleClass('flip-container__active');
     });

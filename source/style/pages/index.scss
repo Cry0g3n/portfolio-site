@@ -3,9 +3,9 @@
   position: relative;
   width: 380px;
   min-height: 395px;
-  transform: translate(-50%, -50%); //TODO: замыливание
-  top: 50%;
-  left: 50%;
+  transform: translate(-50.1%, -50.1%); //TODO: замыливание
+  top: 49.9%;
+  left: 49.9%;
   @include phone {
     width: (300/320)*100%;
   }
