@@ -127,6 +127,7 @@
   display: block;
   position: absolute;
   top: 0;
+  left: 25%;
   opacity: 0;
   transition: .5s linear 0.2s;
   @include phone {
@@ -139,7 +140,7 @@
 }
 
 .previews__image {
-  width: 643px;
+  width: auto;
   height: 416px;
   @include phone {
     max-width: 70%;
