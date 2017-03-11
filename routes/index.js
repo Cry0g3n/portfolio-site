@@ -22,4 +22,9 @@ router.get('/blog', (req, res) => {
     res.render('pages/blog', obj);
 });
 
+router.get('/admin', (req, res) => {
+    const obj = { title: 'Панель администрирования' };
+    res.render('admin/index', obj);
+});
+
 module.exports = router;

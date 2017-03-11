@@ -53,6 +53,23 @@ $(document).ready(() => {
 
     PortfolioSlider().init();
     PositionSlider().init();
+
+    // Табы в админке
+    (function () {
+        $(document).on('click', '.adm-tab__control', function () {
+            const btn = $(this);
+            const idx = btn.index();
+            const container = btn.closest('.adm-tab');
+            const bodyAll = container.find('.adm-tab__body');
+
+            btn.addClass('adm-tab__control--active')
+                .siblings()
+                .removeClass('adm-tab__control--active');
+
+            bodyAll.removeClass('adm-tab__body--active');
+            bodyAll.eq(idx).addClass('adm-tab__body--active');
+        });
+    }());
 });
 
 $('.label__mouse').on('click', () => {
