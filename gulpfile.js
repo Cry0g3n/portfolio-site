@@ -17,6 +17,7 @@ global.$ = {
     buffer : require('vinyl-buffer'),
     babel : require('babelify'),
     browserSync: require('browser-sync').create(),
+    nodemon: require('nodemon'),
     gp: require('gulp-load-plugins')()
 };
 
@@ -30,12 +31,14 @@ $.gulp.task('default', $.gulp.series(
     'sprite:png',
     $.gulp.parallel(
         'sass',
-        'pug',
         'js:foundation',
         'js:process',
         'copy:image',
         'css:foundation',
         'copy:fonts'
+    ),
+    $.gulp.parallel(
+        'nodemon'
     ),
     $.gulp.parallel(
         'watch',

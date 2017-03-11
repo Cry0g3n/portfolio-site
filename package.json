@@ -35,11 +35,15 @@
     "gulp-uglify": "^2.0.1",
     "gulp.spritesmith": "^6.3.0",
     "merge-stream": "^1.0.1",
+    "nodemon": "^1.11.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
     "jquery": "~3.1.1",
+    "morgan": "^1.8.1",
     "normalize.css": "~5.0.0"
   }
 }

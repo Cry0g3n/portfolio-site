@@ -1,8 +1,5 @@
 extends ../layouts/layout
 
-block variables
-    - var title = 'Блог Андрея Шемякова'
-
 block content
     include ../partials/header
     .triangle
@@ -23,7 +20,7 @@ block content
                     use(xlink:href='assets/img/sprite.svg#link').label__svg
 
         section.articles
-            -for (var i = 1; i <= 3; i++){
+            -for (var i = 1; i <= 3; i++) {
             article(id="item_" + i).articles__item.wow.bounce
                 h4.articles__title="Самое важное в SASS"
                 time(datetime="2004-07-24T18:18").articles__time="22 ноября 2016"
