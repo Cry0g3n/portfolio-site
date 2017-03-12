@@ -91,3 +91,35 @@ $(window).resize(() => {
         blur().set();
     }
 });
+
+const formMail = document.querySelector('#mail');
+
+function sendMailData(url, data, cb) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function (e) {
+        const result = JSON.parse(xhr.responseText);
+        cb(result.status);
+    };
+    xhr.send(JSON.stringify(data));
+}
+
+function prepareSendMail(e) {
+    e.preventDefault();
+    // const resultContainer = document.querySelector('.status'); // TODO
+    const data = {
+        name: formMail.name.value,
+        email: formMail.email.value,
+        text: formMail.text.value,
+    };
+    // resultContainer.innerHTML = 'Sending...';
+    sendMailData('/contact', data, (res) => {
+        // resultContainer.innerHTML = res;
+        console.log(res);
+    });
+}
+
+if (formMail) {
+    formMail.addEventListener('submit', prepareSendMail);
+}
