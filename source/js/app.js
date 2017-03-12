@@ -4,6 +4,7 @@ const Preloader = require('./preloader');
 const BlogSlider = require('./blog');
 const PortfolioSlider = require('./portfolioSlider');
 const PositionSlider = require('./positionSlider');
+const blur = require('./blur');
 
 $(document).ready(() => {
     const contacts = $('.contacts');
@@ -70,6 +71,10 @@ $(document).ready(() => {
             bodyAll.eq(idx).addClass('adm-tab__body--active');
         });
     }());
+
+    if ($('.reviews').length) {
+        blur().set();
+    }
 });
 
 $('.label__mouse').on('click', () => {
@@ -80,3 +85,9 @@ Parallax.mouseParallax();
 Parallax.scrollParallax();
 Preloader();
 BlogSlider();
+
+$(window).resize(() => {
+    if ($('.reviews')) {
+        blur().set();
+    }
+});

@@ -1,7 +1,7 @@
 .reviews {
   padding-top: 24px;
-  background: white url("../img/bg/portfolio_mountains-sea_1800.png") no-repeat center center;
-  background-size: cover;
+  background: white url("../img/bg/portfolio_mountains-sea_1800.png");
+  background-size: 1920px;
   min-width: 1200px;
   @extend .clearfix;
   @include phone {
