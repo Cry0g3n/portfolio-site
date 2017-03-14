@@ -8,13 +8,15 @@ const bodyParser = require('body-parser');
 const server = http.createServer(app);
 const currentStatic = require('./gulp/config').root;
 
+const mongoodb = require('./models/mongoodb');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, currentStatic)));
 
 app.use('/', require('./routes/index'));

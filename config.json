@@ -4,5 +4,12 @@
     "subject": "Сообщение с сайта-портфолио",
     "user": "andrey.shemiakov.diasoft@gmail.com",
     "pass": "aug110890#"
+  },
+  "db": {
+    "host": "localhost",
+    "port": "27017",
+    "name": "portfolio",
+    "user": "",
+    "password": ""
   }
 }

@@ -1,6 +1,9 @@
 const express = require('express');
+const mongoose = require('mongoose');
 
 const router = express.Router();
+
+require('../models/post');
 
 router.get('/', (req, res) => {
     const obj = { title: 'Сайт Шемякова Андрея' };
@@ -18,13 +21,22 @@ router.get('/portfolio', (req, res) => {
 });
 
 router.get('/blog', (req, res) => {
-    const obj = { title: 'Блог Андрея Шемякова' };
-    res.render('pages/blog', obj);
+    // const obj = {title: 'Блог Андрея Шемякова'};
+    // res.render('pages/blog', obj);
+
+    const Model = mongoose.model('Post');
+
+    Model.find().then((items) => {
+        console.log(items);
+        res.render('pages/blog', { title: 'Блог Андрея Шемякова', items });
+    });
 });
 
 router.get('/admin', (req, res) => {
     const obj = { title: 'Панель администрирования' };
     res.render('admin/index', obj);
 });
+
+router.use('/addItem', require('./posts'));
 
 module.exports = router;

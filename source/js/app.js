@@ -123,3 +123,63 @@ function prepareSendMail(e) {
 if (formMail) {
     formMail.addEventListener('submit', prepareSendMail);
 }
+
+// Валидация полей формы
+function validateForm(form) {
+    const inputs = form.find('[required]');
+    let isValidate = true;
+
+    inputs.removeClass('field--error');
+
+    inputs.each((i, item) => {
+        const input = $(item);
+        const value = input.val();
+        const type = input.attr('type');
+
+        if (type == 'checkbox') {
+            if (!input.is(':checked')) {
+                input.addClass('field--error');
+                isValidate = false;
+            }
+            return;
+        }
+
+        if (value.trim() == '') {
+            input.addClass('field--error');
+            isValidate = false;
+        } else {
+            input
+                .removeClass('field--error')
+                .addClass('field--ok');
+        }
+    });
+
+    return isValidate;
+}
+
+/* Отправка форм */
+function sendForm(form, method, url, dataType) {
+    if (!validateForm(form)) return;
+
+    $.ajax({
+        type: method,
+        url,
+        data: form.serialize(),
+        dataType: 'json',
+    })
+        .done((answer) => {
+            console.log(answer);
+            if ('href' in answer) {
+                location.href = answer.href;
+            }
+            form.trigger('reset');
+        })
+        .fail(() => {
+            console.log('form send: error');
+        });
+}
+
+$('#form-admin-blog').on('submit', function(e) {
+    e.preventDefault();
+    sendForm($(this), 'POST', '/addItem');
+});
