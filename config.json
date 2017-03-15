@@ -2,8 +2,8 @@
   "upload": "./upload",
   "mail": {
     "subject": "Сообщение с сайта-портфолио",
-    "user": "andrey.shemiakov.diasoft@gmail.com",
-    "pass": "aug110890#"
+    "user": "",
+    "pass": ""
   },
   "db": {
     "host": "localhost",

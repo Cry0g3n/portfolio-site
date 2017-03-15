@@ -179,7 +179,12 @@ function sendForm(form, method, url, dataType) {
         });
 }
 
-$('#form-admin-blog').on('submit', function(e) {
+$('#form-admin-blog').on('submit', function (e) {
     e.preventDefault();
     sendForm($(this), 'POST', '/addItem');
+});
+
+$('#form-admin-skills').on('submit', function (e) {
+    e.preventDefault();
+    sendForm($(this), 'POST', '/addSkills');
 });
